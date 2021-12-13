@@ -1,0 +1,10 @@
+from scipy.integrate import quad
+
+b = 10
+a = 1
+
+def integrand(x):
+    return x**3-2*x +56
+
+ans, err = quad(integrand, a, b)
+print (ans)
